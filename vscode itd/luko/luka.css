@@ -1,0 +1,33 @@
+h1 {
+   font-family: Algerian;
+   text-align: center;
+   margin: 20px;
+   text-decoration: underline;
+   text-weight: bold;
+   color: #654321;
+}
+
+p {
+   font-family: Algerian;
+   font-weight: bolder;
+   text-indent: 30px;
+   text-align: center;
+   color: #542560;
+}
+ 
+img {
+   width: 50%;
+   height: 50%;
+   style="vertical;
+   display: block; margin-left: auto; margin-right: auto; width: 50%;
+}
+
+table, tr, td, th {
+   padding: 5px 5px 5px 5px;
+   font-family: Georgia;
+   border: 5px solid;
+}
+
+a {
+  
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <!-- META tags (meta data je data about data) -->
+    <meta charset="UTF-8">
+    <meta name="Description" content="T-Rex page">
+    <meta name="keywords" content="T-Rex, wikipedia...">
+    <!-- ovako se stranica refreshuje --> <meta http-equiv="refresh" content="30">
+    <!-- ovako se web stranica uskladjuje i na tel --> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spinosaurus</title>
+</head>
+<body>
+    <h1>SPINOSAURUS</h1>
+
+<!-- a služi kao link -->
+    <a href="https://sh.wikipedia.org/wiki/Spinosaurus" target=_self title="Spinosaurus">
+        <p> <b>Spinosaurus</b> wikipedia</p>
+    </a>
+    <a href="https://sh.wikipedia.org/wiki/Spinosaurus">
+        <img src="/images/spinosaurus.jpeg" height="500" alt="This is a picture of a Spinosaurus" title="Spino">
+    </a>
+
+<!-- audio -->
+ <h3 style="color:red">AUDIO</h3>
+    <audio controls loop src="/audios/Jurassic Park 3 - Spinosaurus Roar (Best Spinosaurus Roar).mp3">
+        <source src="/audios/Jurassic Park 3 - Spinosaurus Roar (Best Spinosaurus Roar).mp3">
+        This browser does not support HTML5 audio. 
+    </audio>
+
+<!-- video: <video src=""></video> -->   
+
+<!-- liste -->
+ <h3 style="color:red">LISTE</h3>
+    <h4>Unordered list</h4>
+    <ul>
+        <li>pizza dough</li>
+        <li>tomato sauce</li>
+        <li>cheese</li>
+        <li>toppings</li>
+            <ul>
+                <li>pepperoni</li>
+                <li>mushrooms</li>
+                <li>peppers</li>
+            </ul>
+    </ul>
+
+    <h4>Ordered list</h4>
+    <ol type="A">
+        <li>eat</li>
+        <li>shower</li>
+        <li>leave for work</li>
+    </ol>
+
+    <h4>Description list</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>this adds structure to a web page</dd>
+    </dl>
+    <dl>
+        <dt>CSS</dt>
+        <dd>this adds style to a web page</dd>
+    </dl>
+    <dl>
+        <dt>JavaScript</dt>
+        <dd>this adds functionality to a web page</dd>
+    </dl>
+
+ <!-- tabele -->
+  <h3 style="color:red">TABELE</h3>
+    <table bgcolor="black" width="700">
+        <tr bgcolor="grey" align="center">
+            <th width="100">Monday</th> <!-- th = table header -->
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+            <th width="100">Sunday</th>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td>9-5</td> <!-- td = table data -->
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>Closed</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+
+<!-- boje -->
+ <!-- boje dodajemo sa "style" npr style="color:red"-->
+
+<!-- span = adds markup to text or portion of a doc -->
+ <!-- div = define a division of a document -->
+<div style="background-color: aquamarine;">
+    <p>
+        Spinosaurus je rod dinosaurusa teropoda koji
+        je živeo u današnjoj severnoj Africi, 
+        u periodu Krede, od prie 106 do 93,5 
+        miliona godina.
+    </p>
+    <p>
+        Ovaj rod je prvi put otkriven u Egiptu, 
+        tokom 1910-ih godina, a opisao ga je 
+        nemački paleontolog 
+        <span style="color:red">Ernst Stromer</span>.
+    </p>
+    <p>
+        Ti ostaci su bili uništeni u Drugom 
+        svetskom ratu, ali je nedavno otkriveno 
+        još materijala o ovoj vrsti.
+    </p>
+</div>
+
+<!-- iframe = embed content from another source into an HTML document
+             ex. used for ads and many hacking techniques -->
+    <iframe src="ad.html" width="850" height="100"></iframe>
+        
+    <br>
+    <hr>
+    <br>
+
+<!-- buttons -->
+
+
+<button onclick="doSomething()" style="background-color:blue; color:cadetblue; border-radius:5px;">T-Rex site</button>
+        <p id="test">Hello</p>
+
+        <script>
+            function doSomething(){
+                document.getElementById("test").innerHTML = "Goodbye";
+            }
+        </script>
+</button>
+
+<!-- FORMS -->
+
+<form action="action_page.php" method="POST">
+    
+    <div>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" placeholder="spondgebob" required>
+    </div>
+
+    <br>
+    
+    <div>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="sqarepants" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="pass">password:</label>
+        <input type="password" id="pass" name="pass" maxlenght="12" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" placeholder="SSqarepants@gmail.com" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="phone">phone number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="date">date:</label>
+        <input type="date" id="date" name="date" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="20" value="1" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="title">title:</label>
+
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title" value="Mr.">
+
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+        <label for="PhD.">PhD.</label>
+        <input type="radio" id="PhD." name="title" value="PhD.">
+
+    </div>
+
+    <br>
+
+    <div>
+        <input type="reset">
+    </div>
+
+    <br>
+
+    <div>
+        <input type="submit">
+    </div>
+
+</form>
+
+</body>
+</html>
